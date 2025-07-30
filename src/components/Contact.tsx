@@ -69,9 +69,12 @@ const Contact = () => {
         </div>
 
         <div className="text-center mt-16 pt-8 border-t border-border">
-          <p className="text-sm text-nav-text">
-            © 2025 Rohith Yalamanchili. All rights reserved.
-          </p>
+         <p className="text-sm text-nav-text">
+  ©️ {new Date().getFullYear()} Rohith Yalamanchili. All rights reserved. <br />
+  <span className="text-xs text-muted-foreground">
+    Last updated on {new Date().toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}
+  </span>
+</p>
         </div>
       </div>
     </section>
