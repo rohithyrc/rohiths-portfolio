@@ -29,13 +29,20 @@ const Hero = () => {
           >
             View Work
           </Button>
-          <Button 
-            variant="ghost" 
-            size="lg"
-            className="text-nav-text hover:text-nav-text-hover"
-          >
-            Download Resume
-          </Button>
+          <a 
+  href="/Rohith-Yalamanchili-Resume-20250716.pdf" 
+  download 
+  className="text-nav-text hover:text-nav-text-hover"
+>
+  <Button 
+    variant="ghost" 
+    size="lg"
+    className="text-nav-text hover:text-nav-text-hover flex items-center gap-2"
+  >
+    <Download className="w-4 h-4" />
+    Download Resume
+  </Button>
+</a>
         </div>
         
         <div className="flex items-center justify-center gap-6">
